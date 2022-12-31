@@ -1,0 +1,2 @@
+_class,_id,password,role
+com.kitchenstory.entities.AdminCred,admin@kitchenstory.com,$2a$10$6ALKw68urLtfD2djhtUIBOmDJ7/Q4/1UvfldFXyOcp5gFH383qo7S,ROLE_ADMIN

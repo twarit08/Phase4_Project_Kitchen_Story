@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-8 mx-auto">
+            <div class="card mt-1 bg-warning">
+                <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image"
+                    style="width:100%; height:250px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Kitchen Story Admin Login</h4>
+                    <hr>
+                    <form (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="email"><b>Username:</b></label> <input type="text" name="username"
+                                [(ngModel)]="credentials.username" class="form-control" placeholder="Enter Username"
+                                id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><b>Password:</b></label> <input type="password" name="password"
+                                [(ngModel)]="credentials.password" class="form-control" placeholder="Enter password"
+                                id="pwd" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        <a routerLink="/change-password" role="button" class="btn btn-outline-danger btn-block">Change
+                            Password</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

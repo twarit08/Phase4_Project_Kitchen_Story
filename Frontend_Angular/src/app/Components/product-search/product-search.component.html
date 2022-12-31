@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row mx-auto mt-4">
+        <div class="col">
+            <div class="card-columns">
+                <div *ngFor="let product of item" class="card bg-warning">
+                    <img class=" card-img-top"
+                        src="https://img.freepik.com/free-vector/shopping-supermarket-cart-with-grocery-pictogram_1284-11697.jpg?w=740&t=st=1672168343~exp=1672168943~hmac=4018e3def7957bf35104fa91ff39940cb701fbe95e5483966941a83644f52fc0"
+                        style="width: 100%; height: 250px;" alt="Card image">
+                    <div class="card-header">
+                        <h5>{{product.name}}</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><b>Quantity: </b>{{product.quantity}}</p>
+                        <p class="card-text"><b>Price:</b><span> Rs </span> {{product.price}}</p>
+                        <p class="card-text"><b>Ingeredient: </b>{{product.ingredient}}</p>
+                        <p class="card-text"><b>Manufacturer: </b>{{product.brand}}</p>
+                        <p class="card-text"><b>Country of origin: </b>{{product.origin}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-block" (click)="selectItem(product.name)"><b>Buy
+                                Now</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

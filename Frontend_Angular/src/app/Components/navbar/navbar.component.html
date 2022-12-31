@@ -1,0 +1,12 @@
+<header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a *ngIf="!loggedIn" class="navbar-brand" routerLink="/">Kitchen Story</a>
+        <a *ngIf="loggedIn" class="navbar-brand" routerLink="/dashboard">Admin Dashboard</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a *ngIf="!loggedIn" routerLink="/login" role="button" class="btn btn-danger">Admin Login</a>
+                <a *ngIf="loggedIn" (click)="logoutAdmin()" role="button" class="btn btn-danger">Logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>

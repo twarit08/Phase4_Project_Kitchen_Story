@@ -1,0 +1,49 @@
+<br>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center text-white bg-dark">All Grocery Items</h2>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered table-hover">
+                        <thead class="thead-dark text-center">
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Product Id</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Ingredient</th>
+                                <th>Price(Rs.)</th>
+                                <th>Manufacturer</th>
+                                <th>Quantity</th>
+                                <th>Country Origin</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr *ngFor="let item of allItems">
+                                <td></td>
+                                <td><span>{{item.pid}}</span></td>
+                                <td><span>{{item.name}}</span></td>
+                                <td><span>{{item.category}}</span></td>
+                                <td><span>{{item.ingredient}}</span></td>
+                                <td><span>{{item.price}}</span></td>
+                                <td><span>{{item.brand}}</span></td>
+                                <td><span>{{item.quantity}}</span></td>
+                                <td><span>{{item.origin}}</span></td>
+
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button (click)="deleteItem(item.name)" class="btn btn-danger">Delete</button>
+                                        <button (click)="updateItem(item.name)" class="btn btn-info">Update</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

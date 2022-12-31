@@ -1,0 +1,5 @@
+_class,_id,address,contact,name,od,payment,product,quantity,state
+com.kitchenstory.entities.Order,1672494790355,"2119, Ranjhi, Jabalpur, 482001",8912345678,Twarit Soni,"Dec 31, 2022",Card,[object Object],3,Madhya Pradesh
+com.kitchenstory.entities.Order,1672494975730,"5114, 4th Cross Road, City Residence, Bangalore",9547867458,Shreya Soni,"Dec 31, 2022",COD,[object Object],4,Karnataka
+com.kitchenstory.entities.Order,1672495114404,"2119, 2nd Cross Road,40001",9954671246,Ayush S,"Dec 31, 2022",Card,[object Object],3,Maharashtra
+com.kitchenstory.entities.Order,1672495194871,"5114, 4th Cross Road, City Residence",7451236984,Animesh Chatterjee,"Dec 31, 2022",COD,[object Object],2,Gujarat

@@ -1,0 +1,75 @@
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card mt-5 bg-light">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Insert Grocery Item Details:</h3>
+                        <hr>
+                        <form (ngSubmit)="onSubmit()">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="pid">Product Id</label> <input type="text" class="form-control"
+                                        [(ngModel)]="item.pid" name="pid" placeholder="Enter product id" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="pname">Product name</label> <input type="text" class="form-control"
+                                        [(ngModel)]="item.name" name="name" placeholder="Enter product name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="type">Category</label> <select [(ngModel)]="item.category"
+                                        name="category" class="form-control">
+                                        <option selected>Choose..</option>
+                                        <option value="Fruits & Vegetables">Fruits & Vegetables</option>
+                                        <option value="Dairy & Bakery">Dairy & Bakery</option>
+                                        <option value="Staples">Staples</option>
+                                        <option value="Snacks">Snacks</option>
+                                        <option value="Beverages">Beverages</option>
+                                        <option value="Personal Care">Personal Care</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="ing">Ingredient</label><select [(ngModel)]="item.ingredient"
+                                        name="ingredient" class="form-control">
+                                        <option selected>Choose..</option>
+                                        <option value="Vegetarian">Vegetarian</option>
+                                        <option value="Non-Vegetarian">Non-Vegetarian</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="price">Price(in Rs.)</label> <input type="number" class="form-control"
+                                        [(ngModel)]="item.price" name="price" placeholder="Enter product M.R.P. in Rs."
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="manft">Manufacturer</label> <input type="text" class="form-control"
+                                        [(ngModel)]="item.brand" name="brand" placeholder="Enter product manufacturer"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="quant">Product Quantity</label> <input type="text" class="form-control"
+                                        [(ngModel)]="item.quantity" name="quantity" placeholder="Enter product quantity"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="origin">Country Of Origin</label> <input type="text"
+                                        [(ngModel)]="item.origin" class="form-control" name="origin"
+                                        placeholder="Enter product country of origin" required>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="submit" class="btn btn-primary btn-lg">Add Item</button>
+                                    <button type="reset" class="btn btn-danger btn-lg">Reset</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>

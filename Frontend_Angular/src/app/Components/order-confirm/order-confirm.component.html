@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 mx-auto mt-3">
+            <div class="card  bg-light">
+                <div class="card-header text-center">
+                    <h3><b>Order Confirmation</b></h3>
+                    <p>Dear <b>{{getOrder.name}}</b>, Thank you for shopping with us!</p>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-center"><b>Order Summary</b></h4>
+                    <p class="text-center">{{getOrder.od}}</p>
+
+                    <div class="card mx-auto">
+                        <div class="card-body">
+                            <p class="text-center"><b>Order Id: </b> {{getOrder.id}} <span>&nbsp;</span> <b>Product:
+                                </b> {{product.name}}
+                            </p>
+                            <p class="text-center"><b>Weight: </b> {{product.quantity}} <span>&nbsp;</span> <b>Price:
+                                </b>Rs.
+                                {{product.price}}
+                                <span>&nbsp;</span> <b>Ordered quantity: </b> {{getOrder.quantity}}
+                            </p>
+
+                            <hr>
+                            <div class="text-center">
+                                <h5><b>Order Total</b></h5>
+                                <p><b>Payment mode: </b> {{getOrder.payment}}</p>
+                                <p><b>Total Price: </b>Rs. {{(getOrder.quantity)*(product.price)}}</p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <h5><b>Shipping details</b></h5>
+                                <p><b>Shipping address: </b>{{getOrder.address}},{{getOrder.state}}</p>
+                                <p><b>Contact detail: </b>{{getOrder.contact}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="card-footer">
+                    <h6 class="text-center">Your order is on it's way. Thank you!</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
